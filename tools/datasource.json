@@ -1,0 +1,122 @@
+{
+	"web": {
+		"url": "https://codelaby.es",
+		"title": "Codelaby & Portfolio",
+		"desc": "Personal Portfolio website of Codelaby. A mobile dev designer.",
+		"preview": "img/web-preview.png"
+	},
+	"nav_sections": [{
+			"ref": "about",
+			"name": "About"
+		},
+		{
+			"ref": "skills",
+			"name": "Skills"
+		},
+		{
+			"ref": "works",
+			"name": "Work"
+		},
+		{
+			"ref": "contact",
+			"name": "Contact"
+		}
+	],
+	"welcome": {
+		"title": "Bienvenido a",
+		"desc": "Soy un programador fullstack con experiencia en desarrollo de aplicaciones para Android utilizando código nativo Kotlin.\r\nMi objetivo es proporcionar soluciones robustas y de gran utilidad a mis usuarios.",
+		"button": {
+			"title": "¡Descubrelas ya!",
+			"action": "#works"
+		}
+	},
+	"hero": {
+		"name": "Codelaby",
+		"email": "mycodelaby@gmail.com",
+		"logo": "img/codelaby-logo.png",
+		"photo": "img/codelaby-logo.png",
+		"country": "Spain",
+		"social_links": [{
+				"name": "twitter",
+				"link": "https://twitter.com/Codelaby"
+			},
+			{
+				"name": "linkedin",
+				"link": "https://www.linkedin.com/in/codelaby"
+			}, {
+				"name": "github",
+				"link": "https://github.com/codelaby"
+			}, {
+				"name": "stackoverflow",
+				"link": "https://stackoverflow.com/users/3464919/codelaby"
+			}, {
+				"name": "discord",
+				"link": "https://discord.com/invite/mouredev"
+			}
+		]
+	},
+	"section_about": {
+		"heading": "Acerca de mí",
+		"desc": "Soy un programador fullstack con experiencia en desarrollo de aplicaciones para Android utilizando código nativo Kotlin. Mi objetivo es proporcionar soluciones robustas y de gran utilidad a mis usuarios.\r\n\r\nCon más de 30 años de experiencia en el desarrollo general, he estado involucrado en una variedad de proyectos y tecnologías. Durante los primeros años de mi carrera, pasé varios años creando sitios web en el año 2000. En los últimos 5 años, me he especializado en el desarrollo de aplicaciones para Android utilizando Kotlin, Java, HTML5, CSS3, Javascript y otros lenguajes de programación.\r\n\r\nAdemás, también tengo experiencia en PHP y MySQL, lo que me permite ofrecer soluciones completas para mis usuarios. Siempre estoy buscando aprender nuevos lenguajes y tecnologías para adaptarme a las necesidades y tendencias del mercado. Mi experiencia y habilidades me permiten entender las necesidades de los usuarios y ofrecer soluciones innovadoras para alcanzar sus objetivos.",
+		"button": {
+			"title": "Let's Talk!",
+			"action": ""
+		}
+	},
+	"section_skills": {
+		"heading": "Mis habilidades",
+		"blocks": [{
+			"title": "Frontend",
+			"skills": ["HTML", "CSS", "Javascript", "Kotlin"]
+		}, {
+			"title": "Backend",
+			"skills": ["PHP", "Kotlin", "Python", "MySQL"]
+		}],
+		"others": ["Extración de datos con Web Scraping", "Administración y creación de bases de datos SQL", "Normalización de datos, optimización de consultas", "Capacidades básicas de Data Scientist y Data Analyst", "Principios de diseño de interficies de usuario y experiencia de uso", "Fundamentos del diseño y color", "Habilidades de diseño con Figma"]
+	},
+	"section_projects": {
+		"heading": "Trabajos recientes",
+		"blocks": [{
+			"title": "Precio de la luz",
+			"desc": "Un proyecto aplicación móvil para Android, para obtener el precio de la luz en España en tiempo real, soporte de modo oscuro.",
+			"image": "img/projects/precio_luz_app.webp",
+			"skills": ["Kotlin", "Android View", "PHP Slim", "MySQL"],
+			"source_code": "",
+			"open_it": "https://play.google.com/store/apps/details?id=com.webserveis.app.lightprice"
+		}, {
+			"title": "Date Event Generator",
+			"desc": "Un proyecto web, para generar horarios de un evento en directo, teniendo en cuenta la zona horaria de la audiencia, soporte de modo oscuro.",
+			"image": "img/projects/event_date_generator.webp",
+			"skills": ["HTML", "CSS", "Javascript", "PHP"],
+			"source_code": "",
+			"open_it": "https://codelaby.es/eventdate/"
+		}, {
+			"title": "Envia Whats Telegram todo en 1",
+			"desc": "Un proyecto aplicación móvil, para poder enviar mensajes a tus contactos de whatsapp o telegram des de un mismo lugar, soporte de modo oscuro.",
+			"image": "img/projects/whatsapp_telegram_app.webp",
+			"skills": ["Kotlin", "Android View"],
+			"source_code": "",
+			"open_it": "https://play.google.com/store/apps/details?id=com.webserveis.app.dm"
+		}, {
+			"title": "API REST tienda de productos",
+			"desc": "Un proyecto API REST, para consultar y filtrar productos con sus elances de tienda externa.",
+			"image": "img/projects/shop_api_rest.webp",
+			"skills": ["PHP Slim", "MySQL"],
+			"source_code": "https://github.com/webserveis/devstore",
+			"open_it": "https://codelaby.es/devstore/public/v1/products"
+		}],
+		"button": {
+			"title": "Ver mucho más",
+			"action": "https://play.google.com/store/apps/dev?id=8979891956711794454"
+		}
+	},
+	"section_contact": {
+		"heading": "Contáctame",
+		"title": "Codelaby en la red",
+		"desc": "¡Me puedes encontrar y seguir en varias plataformas en línea! Mi nombre de usuario en las redes es @codelaby, donde comparto actualizaciones sobre mis proyectos y consejos y trucos para el desarrollo de aplicaciones para Android.",
+		"button": {
+			"title": "Ver mi blog",
+			"action": "https://dev4phones.wordpress.com/"
+		}
+	}
+}

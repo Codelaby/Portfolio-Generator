@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <base href="mainpage/" >
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <!-- HTML Meta Tags -->
+    <title>{{web.title}}</title>
+    <meta name="description" content="{{web.desc}}" >
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="{{web.url}}" >
+    <meta property="og:type" content="website" >
+    <meta property="og:title" content="{{web.title}}" >
+    <meta property="og:description" content="{{web.desc}}" >
+    <meta property="og:image" content="{{web.preview}}" >
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" >
+    <meta property="twitter:domain" content="{{web.url}}" >
+    <meta property="twitter:url" content="{{web.url}}" >
+    <meta name="twitter:title" content="{{web.title}}" >
+    <meta name="twitter:description" content="{{web.desc}}" >
+    <meta name="twitter:image" content="{{web.preview}}" >
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+    <!-- FAVICON -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/general.css" >
+    <link rel="stylesheet" href="css/styles.css" >
+    <link rel="stylesheet" href="css/queries.css" >
+
+    <!-- JavaScript -->
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <header class="section-header">
+        <nav class="nav flex-row">
+            <a href="index" class="logo-link"><img src="{{hero.logo}}" alt="{{hero.name}} Logo" class="logo" /></a>
+            <div class="nav-menu">
+                <ul class="nav-list">
+
+{% for row in nav_sections %}
+                    <li>
+                        <a href="#{{row.ref}}" class="link main-nav-link">{{row.name}} <span>&nbsp;&frasl;&gt;</span></a>
+                    </li>
+{% endfor %}
+
+                </ul>
+            </div>
+
+            <div class="nav-toggle">
+                <ion-icon name="menu-outline" class="nav-icon"></ion-icon>
+                <ion-icon name="close-outline" class="nav-icon"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <main>
+        <section class="section-home flex-row-center" id="section-home">
+            <div class="container">
+                <div class="side-social-links--left">
+                    <ul class="social-links social-links--side">
+{% for row in hero.social_links %}
+                        <li>
+                            <a href="{{row.link}}" class="social-link" target="_blank"><ion-icon class="link social-icon" name="logo-{{row.name}}"></ion-icon></a>
+                        </li>
+{% endfor %}                    
+                    </ul>
+                </div>
+                <div class="side-social-links--rigth">
+                    <ul class="social-links social-links--side">
+                        <li>
+                            <a href="mailto:{{hero.email}}" class="link social-link">{{hero.email}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-md">
+                    <div class="hero slide-left">
+                        <div class="hero-text-box flex-col">
+                            <div class="hero-main-title-box">
+                                <p class="enter-text">{{welcome.title}}</p>
+                                <h1 class="heading-primary">{{hero.name}}</h1>
+                                <p class="hero-subheading">
+                                    <span class="animate-subheading"></span>
+                                    {{hero.country}}
+                                </p>
+                            </div>
+
+                            <div class="description-box slide-left">
+                                <p class="description">
+                                {{welcome.desc|nl2br}}
+                                </p>
+{% if welcome.button.action != "" %}
+                                <a href="{{welcome.button.action}}" class="link btn btn-outline" target="_blank">{{welcome.button.title}}</a>
+{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="section-about" id="about">
+            <div class="container">
+                <div class="container-md">
+                    <div class="heading-secondary--left">
+                        <h2 class="heading-secondary">
+                            {{section_about.heading}} <span>&nbsp;&frasl;&gt;</span>
+                        </h2>
+                    </div>
+                    <div class="about-box">
+                        <div class="about-box--text">
+                            <div class="flex-col about-me-text text">
+                                <p>
+                                {{section_about.desc|nl2br}}
+                                </p>
+                            </div>
+{% if section_about.button.action != "" %}                            
+                            <a href="{{section_about.button.action}}" class="link btn btn-full">{{section_about.button.title}}</a>
+{% endif %}
+                        </div>
+                        <div class="about-box--img">
+                            <img src="{{hero.photo}}" alt="Photo of {{hero.name}}" class="about-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="section-skills padd-section" id="skills">
+            <div class="container">
+                <div class="container-md">
+                    <div class="heading-secondary--right">
+                        <h2 class="heading-secondary">
+                            <span> &lt;&frasl;&nbsp;</span>{{section_skills.heading}} 
+                        </h2>
+                    </div>
+                    <div class="fullstack-skills">
+
+{% for blocks in section_skills.blocks %}
+                        <div class="skills-group">
+                            <p class="skills-title">{{blocks.title}}</p>
+                            <div class="skills-data-box">
+                                <ul class="skills-data-list">
+        {% for skill in blocks.skills %}
+                                    <li class="skills-name">
+                                        <ion-icon class="skills-icon" name="checkmark-circle-outline"></ion-icon>
+                                        <p>{{skill}}</p>
+                                    </li>
+        
+    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+{% endfor %} 
+
+                    </div>
+
+                    <!-- Other skills -->
+                    <div class="flex-col other-skills-box">
+                        <p class="skills-title">Other skills</p>
+                        <ul class="flex-col other-skills-list text">
+{% for skill in section_skills.others %}
+                            <li class="other-skills-item">
+                                <ion-icon class="other-skills-icon" name="chevron-forward-outline"></ion-icon>
+                                <p>{{skill}}</p>
+                            </li>
+{% endfor %} 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RECENT WORKS -->
+        <section class="section-works padd-section" id="works">
+            <div class="container">
+                <div class="container-md">
+                    <div class="heading-secondary--left">
+                        <h2 class="heading-secondary">
+                            {{section_projects.heading}} <span>&nbsp;&frasl;&gt;</span>
+                        </h2>
+                    </div>
+                    <div class="works-container">
+{% for blocks in section_projects.blocks %}
+                        <div class="work">
+                            <img src="{{blocks.image}}" alt="{{blocks.title}}" class="work-img" />
+                            <div class="work-text-container text">
+                                <p class="work-title">{{blocks.title}}</p>
+                                <p class="work-description">
+                                    {{blocks.desc}}
+                                </p>
+                                <ul class="work-tags-list">
+    {% for skill in blocks.skills %}
+                                    <li class="work-tag-item">{{skill}}</li>
+    {% endfor %}
+                                </ul>
+                            </div>
+                            <div class="work-links">
+                                <ul class="work-links-list">
+{% if blocks.source_code != "" %}
+                                    <li class="work-links-item">
+                                        <a href="{{blocks.source_code}}" class="link work-link" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                                    </li>
+{% endif %}
+                                    <li class="work-links-item">
+                                        <a href="{{blocks.open_it}}" class="link work-link" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>    
+{% endfor %}
+                    </div>
+                    <div class="see-more-btn-box">
+                        <a href="{{section_projects.button.action}}" class="link btn btn-outline" target="_blank">{{section_projects.button.title}}</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section-contact" id="contact">
+            <div class="container">
+                <div class="container-md">
+                    <div class="contact-container">
+                        <h2 class="heading-secondary">
+                            <span>&lt;&frasl;&nbsp;</span> {{section_contact.heading}}
+                        </h2>
+                        <div class="contact-info-container">
+                            <p class="contact-title">{{section_contact.title}}</p>
+                            <p class="text">
+                                {{section_contact.desc}}    
+                            </p>
+                        </div>
+                        <a href="{{section_contact.button.action}}" class="link btn btn-full">{{section_contact.button.title}}</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section-footer">
+        <div class="container">
+            <div class="container-md">
+                <div class="container-social-links">
+                    <ul class="social-links">
+{% for row in hero.social_links %}
+                        <li>
+                            <a href="{{row.link}}" class="social-link" target="_blank"><ion-icon class="link social-icon" name="logo-{{row.name}}"></ion-icon></a>
+                        </li>
+{% endfor %}  
+                    </ul>
+                </div>
+                <p class="copyright">
+                    Designed & Built by {{hero.name}} &copy;
+                    <span class="year"></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- ANIMATED TEXT -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/typedText.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,380 @@
+:root {
+  --color-surface: #fcfcff;
+  --color-on-surface: #1a1c1e;
+
+  --color-surface-variant: #dee3eb;
+  --color-on-surface-variant: #42474e;
+
+  --color-primary: #00629e;
+  --color-on-primary-container: #001d34;
+
+  --color-secondary: #526070;
+  --color-tertiary: #695779;
+  --color-on-tertiary-container: #f0dbff;
+ 
+  --body-font: 'Montserrat', sans-serif;
+  --border-radius-md: .8em;
+  --border-radius-sm: .8em;
+}
+
+html[data-theme='dark'] {
+
+  --color-surface: #1a1c1e;
+  --color-on-surface: #e2e2e5;
+
+  --color-surface-variant: #42474e;
+  --color-on-surface-variant: #c2c7cf;
+
+  --color-primary: #9acbff;
+  --color-on-primary-container: #cfe5ff;
+
+  --color-secondary: #bac8da;
+  --color-tertiary: #d4bee5;
+  --color-on-tertiary-container: #f0dbff;
+ 
+  --body-font: 'Montserrat', sans-serif;
+  --border-radius-md: .8em;
+  --border-radius-sm: .8em;
+}
+
+
+/* **************** HEADER ******************* */
+.section-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: inherit;
+  z-index: 999;
+}
+
+.logo-link {
+  padding: 1rem;
+}
+
+.logo-link img {
+  width: 72px;
+}
+
+.main-nav-link {
+  color: var(--color-on-surface-variant);
+  font-size: 2.2rem;
+}
+
+.main-nav-link:hover {
+  font-weight: bold;
+}
+
+.main-nav-link:hover span {
+  color: var(--color-secondary);
+  transition: all 0.4s;
+  font-weight: normal;
+}
+
+.nav {
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 1rem;
+}
+
+.nav-menu {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  width: 95%;
+  background-color: var(--color-surface-variant);
+  padding: 2rem;
+  border-radius: var(--border-radius-md);
+  transform: translate(-50%);
+  transition: all 0.4s;
+}
+
+.show-menu .nav-menu {
+  top: 10%;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.nav-icon[name='close-outline'] {
+  display: none;
+
+}
+
+.show-menu .nav-icon[name='menu-outline'] {
+  display: none;
+}
+
+.show-menu .nav-icon[name='close-outline'] {
+  display: block;
+}
+
+/* ******** HERO TITLE ********** */
+
+.section-home {
+  padding: 2rem 1rem;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero {
+  color: var(--color-on-surface);
+}
+
+.hero-text-box {
+  gap: 3rem;
+}
+
+.hero-main-title-box {
+  font-size: 2rem;
+}
+
+.enter-text {
+  font-size: 2.6rem;
+}
+
+.hero-subheading {
+  margin-top: 1rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.animate-subheading {
+  color: var(--color-primary);
+}
+
+.description-box {
+  padding: 0.5rem 0;
+  opacity: 0; /* For the animation */
+}
+.description-box a {
+  margin-top: 2.4rem;
+}
+
+/************* ABOUT SECTION **************/
+
+.section-about {
+  padding: 9rem 1rem;
+}
+
+.about-box--text .link {
+  margin-top: 3.5rem;
+}
+
+.about-me-text {
+  text-align: start;
+  gap: 2.5rem;
+
+  color: var(--color-on-surface);
+}
+
+.about-img {
+  width: 100%;
+  border-radius: var(--border-radius-md);
+}
+
+.about-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 4rem;
+}
+
+/************* SKILLS SECTION **************/
+
+.fullstack-skills {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3.2rem;
+  transition: all 0.4s;
+}
+
+.skills-group {
+  padding: 2.4rem;
+  background-color: var(--color-surface-variant);
+  border-radius: var(--border-radius-md);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.skills-title {
+  color: var(--color-primary);
+}
+
+.skills-data-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  gap: 1.2rem 1.6rem;
+}
+
+.skills-name {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--color-on-surface-variant);
+}
+
+.skills-icon {
+  color: var(--color-on-surface-variant);
+}
+
+.other-skills-box {
+  margin-top: 4.8rem;
+  gap: 0.8rem;
+}
+
+.other-skills-list {
+  gap: 1.2rem;
+}
+
+.other-skills-item {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+
+  color: var(--color-primary);
+}
+
+.other-skills-item p {
+  font-size: 1.6rem;
+}
+
+.other-skills-icon {
+  color: var(--color-secondary);
+  flex-shrink: 0;
+  font-size: 1.8rem;
+}
+
+/************* WORKS SECTION **************/
+.section-works {
+  transition: all 0.4s;
+}
+
+.works-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+}
+
+.work {
+  padding: 2.4rem;
+  border-radius: var(--border-radius-sm);
+  background-color: var(--color-surface-variant);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  color: var(--color-on-surface);
+}
+
+.work-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-sm);
+}
+
+.work-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.work-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.work-tags-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+
+  font-weight: 600;
+  color: var(--color-tertiary);
+}
+
+.work-links {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.work-links-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 6rem;
+}
+
+.work-link {
+  font-size: 2.8rem;
+  color: var(--color-on-surface);
+}
+
+.see-more-btn-box {
+  margin-top: 4.8rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+/************* CONTACT SECTION **************/
+
+.section-contact {
+  padding: 9.6rem 0 0 0;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+
+  text-align: center;
+}
+
+.contact-title {
+  color: var(--color-primary);
+  font-size: 3.6rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.contact-info-container:first-child {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.contact-info-container .text {
+  width: 80%;
+  margin: 0 auto;
+}
+/************* CONTACT SECTION **************/
+
+.section-footer {
+  padding-top: 4.8rem;
+  margin-bottom: 1.2rem;
+}
+
+footer .social-links {
+  width: 50%;
+  margin: 0 auto;
+  transition: width 0.4s;
+}
+
+.copyright {
+  margin-top: 4.8rem;
+  text-align: center;
+}
