@@ -1,5 +1,5 @@
 # Portfolio Generator
-es una herramienta que permite generar una página web de portafolio personalizada utilizando Python y el sistema de plantillas Jinja2. El usuario debe proporcionar los datos necesarios para generar su página web en un archivo `datasource.json`.
+Es una herramienta que permite generar una página web de portafolio personalizada utilizando Python y el sistema de plantillas Jinja2.
 
 ## Características
 Genera una página web personalizada utilizando plantillas `Jinja2`.
@@ -24,6 +24,7 @@ pip install -r requirements.txt
 Dentro de la carpeta `mainpage` se encuentran los archivos de estilo, recursos gráficos, se pueden customizar de la siguiente manera:
 
 **Imágenes**
+
 Las imágenes del portafolio se encuentran dentro de la carpeta "img" en el proyecto. Esta carpeta contiene todas las imágenes necesarias para el diseño y contenido del portafolio. También se encuentra en esta carpeta el favicon, que es el icono que aparece en la pestaña del navegador, para generarlo se puede usar una herramienta online.
 
 Existen varias herramientas en línea gratuitas que se pueden utilizar para generar un favicon a partir de una imagen. Estas herramientas suelen permitir elegir el tamaño y formato del favicon, y generar los diferentes tamaños necesarios para distintos dispositivos.
@@ -33,6 +34,7 @@ https://www.favicon-generator.org/
 Una vez generado el favicon, se debe colocar en la carpeta "img" junto con las demás imágenes del portafolio.
 
 **Paleta de colores**
+
 Generar una paleta de colores es esencial para asegurar un diseño coherente y atractivo en un portafolio. Una forma de hacerlo es mediante el uso de una herramienta online llamada Material Theme Builder.
 
 https://m3.material.io/theme-builder#/custom
@@ -42,6 +44,10 @@ Esta herramienta permite generar una paleta de colores siguiendo las pautas de M
 Para aplicar los colores del tema claro, se utiliza el bloque `:root`, que es el elemento raíz del documento y se aplica a toda la página. En este bloque se especifican las variables de color para el tema claro.
 
 Para aplicar los colores del tema oscuro, se utiliza el bloque `html[data-theme='dark']`, en este bloque se especifican las variables de color para el tema oscuro.
+
+**Datos para el portfolio**
+El usuario debe proporcionar los datos necesarios para generar su página web en un archivo `datasource.json`.
+Edite ese archivo con sus datos.
 
 ## Generar el portafolio
 Dentro de la carpeta `tools` se encuentra la herramienta de generación del portafolio.
