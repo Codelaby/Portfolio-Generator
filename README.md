@@ -45,7 +45,8 @@ Para aplicar los colores del tema claro, se utiliza el bloque `:root`, que es el
 
 Para aplicar los colores del tema oscuro, se utiliza el bloque `html[data-theme='dark']`, en este bloque se especifican las variables de color para el tema oscuro.
 
-**Datos para el portfolio**
+**Datos**
+
 El usuario debe proporcionar los datos necesarios para generar su página web en un archivo `datasource.json`.
 Edite ese archivo con sus datos.
 
