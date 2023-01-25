@@ -1,6 +1,8 @@
 # Portfolio Generator
 Es una herramienta que permite generar una página web de portafolio personalizada utilizando Python y el sistema de plantillas Jinja2.
 
+![Portfolio builder](porfolio_builder.png)
+
 ## Características
 Genera una página web personalizada utilizando plantillas `Jinja2`.
 Utiliza un archivo datasource.json para almacenar los datos del usuario.
@@ -25,7 +27,7 @@ Dentro de la carpeta `mainpage` se encuentran los archivos de estilo, recursos g
 
 **Imágenes**
 
-Las imágenes del portafolio se encuentran dentro de la carpeta "img" en el proyecto. Esta carpeta contiene todas las imágenes necesarias para el diseño y contenido del portafolio. También se encuentra en esta carpeta el favicon, que es el icono que aparece en la pestaña del navegador, para generarlo se puede usar una herramienta online.
+Las imágenes del portafolio se encuentran dentro de la carpeta `img` en el proyecto. Esta carpeta contiene todas las imágenes necesarias para el diseño y contenido del portafolio. También se encuentra en esta carpeta el favicon, que es el icono que aparece en la pestaña del navegador, para generarlo se puede usar una herramienta online.
 
 Existen varias herramientas en línea gratuitas que se pueden utilizar para generar un favicon a partir de una imagen. Estas herramientas suelen permitir elegir el tamaño y formato del favicon, y generar los diferentes tamaños necesarios para distintos dispositivos.
 
@@ -53,8 +55,6 @@ Edite ese archivo con sus datos.
 ## Generar el portafolio
 Dentro de la carpeta `tools` se encuentra la herramienta de generación del portafolio.
 
-Proporcione los datos necesarios para generar su página web en el archivo `datasource.json`.
-
 Ejecute el script `portfolio_generator.py` en su consola.
 ```bash
 python portfolio_generator.py
@@ -62,7 +62,7 @@ python portfolio_generator.py
 Siga las instrucciones proporcionadas por la interfaz de línea de comando para generar su página web.
 
 ## Alojar el portafolio
-Para subir el portafolio a producción en un servidor remoto, es necesario subir el archivo generado `index.html' y la carpeta `mainpage` dentro de esta carpeta se encuentra otras carpertas que contienen todos los archivos necesarios para el correcto funcionamiento del portafolio, como hojas de estilo, imágenes, scripts y recursos.
+Para subir el portafolio a producción en un servidor remoto, es necesario subir el archivo generado `index.html` y la carpeta `mainpage` dentro de esta carpeta se encuentra otras carpertas que contienen todos los archivos necesarios para el correcto funcionamiento del portafolio, como hojas de estilo, imágenes, scripts y recursos.
 
 Para subir estos archivos al servidor remoto se puede utilizar herramientas de transferencia de archivos como FTP, SFTP o Git. Es importante tener en cuenta que se debe seguir las instrucciones específicas del servidor remoto para configurar el acceso y subir los archivos correctamente.
 
