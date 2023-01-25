@@ -2,10 +2,11 @@ const headerEl = document.querySelector(".section-header");
 const navIconEl = document.querySelector(".nav-toggle");
 
 /************ DARK THEM MODE */
-var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-if (storedTheme)
-  document.documentElement.setAttribute('data-theme', storedTheme)
-
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  document.documentElement.setAttribute('data-theme', "dark")
+} else {
+  document.documentElement.setAttribute('data-theme', "light")
+}
 
 /************ SHOW MENU - MOBILE */
 
