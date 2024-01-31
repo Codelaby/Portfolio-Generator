@@ -1,10 +1,22 @@
 {
 	"web": {
-		"url": "https://codelaby.es",
+		"url": "https://codelaby.netlify.app",
 		"title": "Codelaby & Portfolio",
 		"desc": "Personal Portfolio website of Codelaby. A mobile dev designer.",
 		"preview": "img/web-preview.png"
 	},
+	"eula" : [{
+		"name" : "Privacy Policy",
+		"link" : "https://codelaby.github.io/eula.html"
+	},
+	{
+		"name" : "Cookies Policy",
+		"link" : "https://codelaby.github.io/eula.html"
+	},
+	{
+		"name" : "Terms of Use",
+		"link" : "https://codelaby.github.io/eula.html"
+	}],
 	"nav_sections": [{
 			"ref": "about",
 			"name": "About"
@@ -24,7 +36,7 @@
 	],
 	"welcome": {
 		"title": "Bienvenido a",
-		"desc": "Soy un programador fullstack con experiencia en desarrollo de aplicaciones para Android utilizando código nativo Kotlin.\r\nMi objetivo es proporcionar soluciones robustas y de gran utilidad a mis usuarios.",
+		"desc": "Construyendo mi futuro con código.\r\nMi objetivo es proporcionar soluciones robustas y de gran utilidad a mis usuarios.",
 		"button": {
 			"title": "¡Descubrelas ya!",
 			"action": "#works"
@@ -52,12 +64,15 @@
 			}, {
 				"name": "discord",
 				"link": "https://discord.com/invite/mouredev"
+			}, {
+				"name": "youtube",
+				"link": "https://www.youtube.com/channel/UCOSHwP_fmkjoqdsXJLH6xHg"
 			}
 		]
 	},
 	"section_about": {
 		"heading": "Acerca de mí",
-		"desc": "Soy un programador fullstack con experiencia en desarrollo de aplicaciones para Android utilizando código nativo Kotlin. Mi objetivo es proporcionar soluciones robustas y de gran utilidad a mis usuarios.\r\n\r\nCon más de 30 años de experiencia en el desarrollo general, he estado involucrado en una variedad de proyectos y tecnologías. Durante los primeros años de mi carrera, pasé varios años creando sitios web en el año 2000. En los últimos 5 años, me he especializado en el desarrollo de aplicaciones para Android utilizando Kotlin, Java, HTML5, CSS3, Javascript y otros lenguajes de programación.\r\n\r\nAdemás, también tengo experiencia en PHP y MySQL, lo que me permite ofrecer soluciones completas para mis usuarios. Siempre estoy buscando aprender nuevos lenguajes y tecnologías para adaptarme a las necesidades y tendencias del mercado. Mi experiencia y habilidades me permiten entender las necesidades de los usuarios y ofrecer soluciones innovadoras para alcanzar sus objetivos.",
+		"desc": "Con más de 30 años de experiencia en el ámbito del desarrollo, me destaco como programador fullstack con especialización en la creación de aplicaciones para Android mediante el uso de Kotlin. Además, estoy expandiendo mi experiencia en el desarrollo de aplicaciones para iOS, utilizando SwiftUI.\r\nA lo largo de mi carrera, he participado activamente en una amplia gama de proyectos y tecnologías, lo que me ha proporcionado una perspectiva integral y profunda en el campo del desarrollo de software.\r\nMi objetivo es proporcionar soluciones robustas y de gran utilidad a mis usuarios.\r\n",
 		"button": {
 			"title": "Let's Talk!",
 			"action": ""
@@ -67,10 +82,10 @@
 		"heading": "Mis habilidades",
 		"blocks": [{
 			"title": "Frontend",
-			"skills": ["HTML", "CSS", "Javascript", "Kotlin"]
+			"skills": ["HTML", "CSS", "Javascript", "Kotlin", "Swift", "SwiftUI"]
 		}, {
 			"title": "Backend",
-			"skills": ["PHP", "Kotlin", "Python", "MySQL"]
+			"skills": ["PHP", "Kotlin", "Python", "MySQL","Supabase"]
 		}],
 		"others": ["Extración de datos con Web Scraping", "Administración y creación de bases de datos SQL", "Normalización de datos, optimización de consultas", "Capacidades básicas de Data Scientist y Data Analyst", "Principios de diseño de interficies de usuario y experiencia de uso", "Fundamentos del diseño y color", "Habilidades de diseño con Figma"]
 	},
