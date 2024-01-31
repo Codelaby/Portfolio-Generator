@@ -215,7 +215,9 @@
                     <div class="works-container">
 {% for blocks in section_projects.blocks %}
                         <div class="work">
-                            <img src="{{blocks.image}}" alt="{{blocks.title}}" class="work-img" />
+                            <a href="{{blocks.open_it}}" target="_blank">
+                                <img src="{{blocks.image}}" alt="{{blocks.title}}" class="work-img" />
+                            </a>
                             <div class="work-text-container text">
                                 <p class="work-title">{{blocks.title}}</p>
                                 <p class="work-description">
@@ -285,6 +287,16 @@
                 <p class="copyright">
                     Designed & Built by {{hero.name}} &copy;
                     <span class="year"></span>
+                </p>
+                <p>
+                    <ul id="eula-list">
+                        {% for row in eula %}
+                            <li>
+                                <a href="{{ row.link }}" target="_blank">{{ row.name }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+
                 </p>
             </div>
         </div>
