@@ -55,6 +55,7 @@
     <link rel="stylesheet" href="css/general.css" >
     <link rel="stylesheet" href="css/styles.css" >
     <link rel="stylesheet" href="css/queries.css" >
+    <link rel="stylesheet" href="css/cookie_consent.css" >
 
     <!-- JavaScript -->
     <script src="js/index.js" defer></script>
@@ -301,6 +302,11 @@
             </div>
         </div>
     </footer>
+    <section id="cookie-consent-popup" style="display:none">
+        <p>{{ cookie_consent.content }} <a href="{{ cookie_consent.more_info }}" target="_blank">Política de cookies</a></p>
+        <button id="cookie-consent-decline">{{ cookie_consent.reject }}</button>
+        <button id="cookie-consent-accept">{{ cookie_consent.accept }}</button>
+    </section>
     <!-- ICONS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -308,6 +314,8 @@
     <!-- ANIMATED TEXT -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/typedText.js" type="module"></script>
+    <!-- COOKIE CONSENT -->
+    <script src="js/cookie_consent.js"></script>
 </body>
 
 </html>
