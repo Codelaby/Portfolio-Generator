@@ -17,6 +17,12 @@
 		"name" : "Terms of Use",
 		"link" : "https://codelaby.github.io/eula.html"
 	}],
+	"cookie_consent" : {
+		"content" : "Este sitio web utiliza tecnologías como cookies para habilitar la funcionalidad esencial del sitio, así como para fines de análisis, personalización y publicidad dirigida. Puedes cambiar la configuración en cualquier momento, o aceptar la configuración predeterminada. Puede cerrar este banner para continuar con solo las cookies esenciales",
+		"accept" : "Aceptar",
+		"reject" : "Declinar",
+		"more_info": "https://codelaby.github.io/eula.html"
+	},
 	"nav_sections": [{
 			"ref": "about",
 			"name": "About"
