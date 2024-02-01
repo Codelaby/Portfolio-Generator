@@ -1,0 +1,36 @@
+#cookie-consent-popup {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 20px;
+    font-size: small;
+  }
+  
+  #cookie-consent-accept {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  #cookie-consent-decline {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+  }
+
+  #cookie-consent-popup a {
+    color: white;
+}
